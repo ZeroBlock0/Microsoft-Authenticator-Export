@@ -1,4 +1,4 @@
-# microsoft-authenticator-dump
+# Microsoft-Authenticator-Export
 
 导出TOTP
 

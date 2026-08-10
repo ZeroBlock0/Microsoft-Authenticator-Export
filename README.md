@@ -1,3 +1,5 @@
+
+
 # Microsoft-Authenticator-Export
 
 导出TOTP
@@ -13,7 +15,7 @@
 
 Exporting TOTP
 
-1. Locate the dataThe storage path for the 2FA key data in Microsoft Authenticator is /data/data/com.azure.authenticator/databases/PhoneFactor
+1. Locate the data. The storage path for the 2FA key data in Microsoft Authenticator is /data/data/com.azure.authenticator/databases/PhoneFactor
 2. The PhoneFactor file itself is an SQLite database file, so when copying, you need to copy the PhoneFactor, PhoneFactor-shm, and PhoneFactor-wal files (if available). You can use an SQLite database management tool to view the specific data information. The desired data can be found in the accounts table.
 3. Extracting with dump.py
 4. An account_type of 1 indicates a Microsoft account, while 0 indicates a manually added third-party account.
